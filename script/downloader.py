@@ -79,6 +79,9 @@ def download_games(year):
                                    f"----- Processed {game_counter} games, current run time: \
                                    {round((time.time() - start_time)/60, 2)} minutes"
                                )
+                           if game_counter == 30:
+                               exit()
+                            
 
 
 if __name__ == "__main__":
